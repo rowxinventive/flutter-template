@@ -10,8 +10,16 @@ class TTextFormFieldTheme {
     prefixIconColor: TColors.darkGrey,
     suffixIconColor: TColors.darkGrey,
     // constraints: const BoxConstraints.expand(height: TSizes.inputFieldHeight),
-    labelStyle: const TextStyle().copyWith(fontSize: TSizes.fontSizeMd, color: TColors.textPrimary, fontFamily: 'Roboto'),
-    hintStyle: const TextStyle().copyWith(fontSize: TSizes.fontSizeSm, color: TColors.textSecondary, fontFamily: 'Roboto'),
+    labelStyle: const TextStyle().copyWith(
+      fontSize: TSizes.fontSizeMd,
+      color: TColors.textPrimary,
+      fontFamily: 'Roboto',
+    ),
+    hintStyle: const TextStyle().copyWith(
+      fontSize: TSizes.fontSizeSm,
+      color: TColors.textSecondary,
+      fontFamily: 'Roboto',
+    ),
     errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal, fontFamily: 'Roboto'),
     floatingLabelStyle: const TextStyle().copyWith(color: TColors.textSecondary, fontFamily: 'Roboto'),
     border: const OutlineInputBorder().copyWith(
@@ -22,7 +30,7 @@ class TTextFormFieldTheme {
       borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
       borderSide: const BorderSide(width: 1, color: TColors.borderPrimary),
     ),
-    focusedBorder:const OutlineInputBorder().copyWith(
+    focusedBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
       borderSide: const BorderSide(width: 1, color: TColors.borderSecondary),
     ),

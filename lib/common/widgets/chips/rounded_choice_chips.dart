@@ -12,12 +12,7 @@ class TChoiceChip extends StatelessWidget {
   ///   - text: The label text for the chip.
   ///   - selected: Whether the chip is currently selected.
   ///   - onSelected: Callback function when the chip is selected.
-  const TChoiceChip({
-    super.key,
-    required this.text,
-    required this.selected,
-    this.onSelected,
-  });
+  const TChoiceChip({super.key, required this.text, required this.selected, this.onSelected});
 
   final String text;
   final bool selected;
@@ -30,9 +25,10 @@ class TChoiceChip extends StatelessWidget {
       data: Theme.of(context).copyWith(canvasColor: Colors.transparent),
       child: ChoiceChip(
         // Use this function to get Colors as a Chip
-        avatar: THelperFunctions.getColor(text) != null
-            ? TCircularContainer(width: 50, height: 50, backgroundColor: THelperFunctions.getColor(text)!)
-            : null,
+        avatar:
+            THelperFunctions.getColor(text) != null
+                ? TCircularContainer(width: 50, height: 50, backgroundColor: THelperFunctions.getColor(text)!)
+                : null,
         selected: selected,
         onSelected: onSelected,
         backgroundColor: THelperFunctions.getColor(text),

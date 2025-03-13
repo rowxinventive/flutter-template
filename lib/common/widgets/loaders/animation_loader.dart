@@ -20,7 +20,10 @@ class TAnimationLoaderWidget extends StatelessWidget {
     required this.animation,
     this.showAction = false,
     this.actionText,
-    this.onActionPressed, this.height, this.width, this.style,
+    this.onActionPressed,
+    this.height,
+    this.width,
+    this.style,
   });
 
   final String text;
@@ -37,26 +40,23 @@ class TAnimationLoaderWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Lottie.asset(animation, height: height ?? MediaQuery.of(context).size.height * 0.5, width: width), // Display Lottie animation
+          Lottie.asset(
+            animation,
+            height: height ?? MediaQuery.of(context).size.height * 0.5,
+            width: width,
+          ), // Display Lottie animation
           const SizedBox(height: TSizes.defaultSpace),
-          Text(
-            text,
-            style: style ?? Theme.of(context).textTheme.bodyMedium,
-            textAlign: TextAlign.center,
-          ),
+          Text(text, style: style ?? Theme.of(context).textTheme.bodyMedium, textAlign: TextAlign.center),
           const SizedBox(height: TSizes.defaultSpace),
           showAction
               ? SizedBox(
-                  width: 250,
-                  child: OutlinedButton(
-                    onPressed: onActionPressed,
-                    style: OutlinedButton.styleFrom(backgroundColor: TColors.dark),
-                    child: Text(
-                      actionText!,
-                      style: Theme.of(context).textTheme.bodyMedium!.apply(color: TColors.light),
-                    ),
-                  ),
-                )
+                width: 250,
+                child: OutlinedButton(
+                  onPressed: onActionPressed,
+                  style: OutlinedButton.styleFrom(backgroundColor: TColors.dark),
+                  child: Text(actionText!, style: Theme.of(context).textTheme.bodyMedium!.apply(color: TColors.light)),
+                ),
+              )
               : const SizedBox(),
         ],
       ),

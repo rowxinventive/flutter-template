@@ -1,4 +1,3 @@
-
 import 'package:agrictools/features/otpScreen/otpScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -35,9 +34,7 @@ class _LoginWidgetState extends State<LoginScreen> {
           child: Container(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
-            decoration: const BoxDecoration(
-              color: Color(0xFFFFE4D1),
-            ),
+            decoration: const BoxDecoration(color: Color(0xFFFFE4D1)),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -61,20 +58,14 @@ class _LoginWidgetState extends State<LoginScreen> {
                     width: MediaQuery.of(context).size.width,
                     decoration: const BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(30.0),
-                        topRight: Radius.circular(30.0),
-                      ),
+                      borderRadius: BorderRadius.only(topLeft: Radius.circular(30.0), topRight: Radius.circular(30.0)),
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                       Padding(
+                        Padding(
                           padding: EdgeInsets.only(top: 24.0),
-                          child: Text(
-                            'Log In',
-                            style: TTextTheme.lightTextTheme.bodyMedium,
-                          ),
+                          child: Text('Log In', style: TTextTheme.lightTextTheme.bodyMedium),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 24.0),
@@ -89,10 +80,7 @@ class _LoginWidgetState extends State<LoginScreen> {
                               children: [
                                 const Padding(
                                   padding: EdgeInsets.only(left: 12.0),
-                                  child: Icon(
-                                    Icons.mail_outline,
-                                    color: Colors.grey,
-                                  ),
+                                  child: Icon(Icons.mail_outline, color: Colors.grey),
                                 ),
                                 Expanded(
                                   child: Padding(
@@ -108,10 +96,7 @@ class _LoginWidgetState extends State<LoginScreen> {
                                           borderRadius: BorderRadius.circular(8.0),
                                         ),
                                         border: InputBorder.none,
-                                        label:  Text(
-                                          'email',
-                                          style: TTextTheme.lightTextTheme.bodyMedium,
-                                        ),
+                                        label: Text('email', style: TTextTheme.lightTextTheme.bodyMedium),
                                       ),
                                     ),
                                   ),
@@ -133,10 +118,7 @@ class _LoginWidgetState extends State<LoginScreen> {
                               children: [
                                 const Padding(
                                   padding: EdgeInsets.only(left: 12.0),
-                                  child: Icon(
-                                    Icons.lock_outline,
-                                    color: Colors.grey,
-                                  ),
+                                  child: Icon(Icons.lock_outline, color: Colors.grey),
                                 ),
                                 Expanded(
                                   child: Padding(
@@ -153,15 +135,10 @@ class _LoginWidgetState extends State<LoginScreen> {
                                           borderSide: const BorderSide(color: Colors.transparent),
                                           borderRadius: BorderRadius.circular(8.0),
                                         ),
-                                        label: Text(
-                                          'Password',
-                                          style: TTextTheme.lightTextTheme.bodySmall,
-                                        ),
+                                        label: Text('Password', style: TTextTheme.lightTextTheme.bodySmall),
                                         border: InputBorder.none,
                                         suffixIcon: IconButton(
-                                          icon: Icon(
-                                            _passwordVisibility ? Icons.visibility : Icons.visibility_off,
-                                          ),
+                                          icon: Icon(_passwordVisibility ? Icons.visibility : Icons.visibility_off),
                                           onPressed: () {
                                             setState(() {
                                               _passwordVisibility = !_passwordVisibility;
@@ -182,10 +159,7 @@ class _LoginWidgetState extends State<LoginScreen> {
                             padding: const EdgeInsets.only(right: 50.0, top: 8.0),
                             child: TextButton(
                               onPressed: () {},
-                              child:  Text(
-                                'Forgot Password?',
-                                style: TTextTheme.lightTextTheme.bodySmall,
-                              ),
+                              child: Text('Forgot Password?', style: TTextTheme.lightTextTheme.bodySmall),
                             ),
                           ),
                         ),
@@ -198,14 +172,9 @@ class _LoginWidgetState extends State<LoginScreen> {
                             style: ElevatedButton.styleFrom(
                               padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 12.0),
                               backgroundColor: Colors.orange,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(24.0),
-                              ),
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24.0)),
                             ),
-                            child: Text(
-                              'Log In',
-                              style: TTextTheme.lightTextTheme.bodyMedium,
-                            ),
+                            child: Text('Log In', style: TTextTheme.lightTextTheme.bodyMedium),
                           ),
                         ),
                       ],

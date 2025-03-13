@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
-
 class TPageHeading extends StatelessWidget {
-  const TPageHeading({
-    super.key,required this.heading,  this.rightSideWidget,
-  });
+  const TPageHeading({super.key, required this.heading, this.rightSideWidget});
 
   final String heading;
   final Widget? rightSideWidget;
@@ -13,10 +10,7 @@ class TPageHeading extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(heading, style: Theme.of(context).textTheme.headlineLarge),
-        rightSideWidget ?? const SizedBox(),
-      ],
+      children: [Text(heading, style: Theme.of(context).textTheme.headlineLarge), rightSideWidget ?? const SizedBox()],
     );
   }
 }

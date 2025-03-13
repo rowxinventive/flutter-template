@@ -10,10 +10,7 @@ class MyHomePage extends StatelessWidget {
     final bool isTablet = screenSize.width >= 600;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('HomePage', style: Theme.of(context).textTheme.headlineMedium),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: Text('HomePage', style: Theme.of(context).textTheme.headlineMedium), centerTitle: true),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: isTablet ? 30 : 20, vertical: isTablet ? 30 : 20),
         child: Column(
@@ -67,7 +64,9 @@ class MyHomePage extends StatelessWidget {
               ),
               child: Text(
                 'Get Started',
-                style: Theme.of(context).textTheme.displayMedium?.copyWith(fontSize: isTablet ? 20 : 16, fontWeight: FontWeight.bold),
+                style: Theme.of(
+                  context,
+                ).textTheme.displayMedium?.copyWith(fontSize: isTablet ? 20 : 16, fontWeight: FontWeight.bold),
               ),
             ),
             SizedBox(height: 20),

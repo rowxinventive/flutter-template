@@ -5,11 +5,7 @@ import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
 
 class TDataTable extends StatelessWidget {
-  const TDataTable({
-    Key? key,
-    required this.columns,
-    required this.rows,
-  }) : super(key: key);
+  const TDataTable({Key? key, required this.columns, required this.rows}) : super(key: key);
 
   /// List of columns for the data table
   final List<DataColumn> columns;
@@ -42,7 +38,10 @@ class TDataTable extends StatelessWidget {
         ),
         // Set the decoration for the heading row of the data table
         headingRowDecoration: const BoxDecoration(
-          borderRadius: BorderRadius.only(topLeft: Radius.circular(TSizes.borderRadiusMd), topRight: Radius.circular(TSizes.borderRadiusMd)),
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(TSizes.borderRadiusMd),
+            topRight: Radius.circular(TSizes.borderRadiusMd),
+          ),
         ),
       ),
     );

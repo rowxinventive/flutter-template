@@ -14,15 +14,14 @@ dependencies:
     sdk: flutter
 
   # Utility Packages
-  intl: ^0.18.1
-  lottie: ^2.7.0
+  intl: ^0.20.2
+  lottie: ^3.3.1
   shimmer: ^3.0.0
   clipboard: ^0.1.3
   image_picker: ^1.0.4
   url_launcher: ^6.2.1
-  flutter_dropzone: ^3.0.7
   flutter_typeahead: ^5.2.0
-  connectivity_plus: ^5.0.1
+  connectivity_plus: ^6.1.3
   multi_select_flutter: ^4.1.3
   cached_network_image: ^3.3.0
   flutter_native_splash: ^2.3.5
@@ -31,12 +30,15 @@ dependencies:
   
 
   # Web Specific
-  web: ^0.5.1
+  web: ^1.1.1
   http: ^1.1.2
   html: ^0.15.4
-  fl_chart: ^0.66.2
+  fl_chart: ^0.70.2
   data_table_2: ^2.5.9
-  url_strategy: ^0.2.0
+  url_strategy: ^0.3.0
+  flutter_dropzone: ^4.2.1
+  flutter_dropzone_web: ^4.2.0
+  flutter_dropzone_platform_interface: ^2.2.0
 
   # Icons
   iconsax: ^0.0.8
@@ -52,7 +54,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^3.0.0
+  flutter_lints: ^5.0.0
 
 
 flutter:

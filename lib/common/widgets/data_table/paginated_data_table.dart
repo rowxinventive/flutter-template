@@ -75,7 +75,12 @@ class TPaginatedDataTable extends StatelessWidget {
           sortColumnIndex: sortColumnIndex,
           headingTextStyle: Theme.of(context).textTheme.titleMedium,
           headingRowColor: MaterialStateProperty.resolveWith((states) => TColors.primaryBackground),
-          empty: TAnimationLoaderWidget(animation: TImages.packageAnimation, text: 'Nothing Found', height: 200, width: 200),
+          empty: TAnimationLoaderWidget(
+            animation: TImages.packageAnimation,
+            text: 'Nothing Found',
+            height: 200,
+            width: 200,
+          ),
           headingRowDecoration: const BoxDecoration(
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(TSizes.borderRadiusMd),

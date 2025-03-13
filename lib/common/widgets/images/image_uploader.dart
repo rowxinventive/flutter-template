@@ -71,21 +71,21 @@ class TImageUploader extends StatelessWidget {
         // Display the image in either circular or rounded shape
         circular
             ? TCircularImage(
-                image: image,
-                width: width,
-                height: height,
-                imageType: imageType,
-                memoryImage: memoryImage,
-                backgroundColor: TColors.primaryBackground,
-              )
+              image: image,
+              width: width,
+              height: height,
+              imageType: imageType,
+              memoryImage: memoryImage,
+              backgroundColor: TColors.primaryBackground,
+            )
             : TRoundedImage(
-                image: image,
-                width: width,
-                height: height,
-                imageType: imageType,
-                memoryImage: memoryImage,
-                backgroundColor: TColors.primaryBackground,
-              ),
+              image: image,
+              width: width,
+              height: height,
+              imageType: imageType,
+              memoryImage: memoryImage,
+              backgroundColor: TColors.primaryBackground,
+            ),
         // Display the edit icon button on top of the image
         Positioned(
           top: top,
@@ -99,7 +99,7 @@ class TImageUploader extends StatelessWidget {
             onPressed: onIconButtonPressed,
             backgroundColor: TColors.primary.withOpacity(0.9),
           ),
-        )
+        ),
       ],
     );
   }

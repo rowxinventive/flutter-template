@@ -18,14 +18,8 @@ class TDialogs {
           title: Text(title),
           content: Text(content),
           actions: <Widget>[
-            TextButton(
-              onPressed: onCancel ?? () => Navigator.of(context).pop(),
-              child: Text(cancelText),
-            ),
-            TextButton(
-              onPressed: onConfirm,
-              child: Text(confirmText),
-            ),
+            TextButton(onPressed: onCancel ?? () => Navigator.of(context).pop(), child: Text(cancelText)),
+            TextButton(onPressed: onConfirm, child: Text(confirmText)),
           ],
         );
       },

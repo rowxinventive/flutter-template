@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import '../../utils/constants/colors.dart';
 
-
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
 
@@ -37,9 +36,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           child: Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: const BoxDecoration(
-              color: TColors.primaryBackground,
-            ),
+            decoration: const BoxDecoration(color: TColors.primaryBackground),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -72,16 +69,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(top: 24.0),
-                          child: Text(
-                            'Sign up',
-                            style: textTheme.headlineLarge,
-                          ),
+                          child: Text('Sign up', style: textTheme.headlineLarge),
                         ),
-                        _buildTextField(
-                          controller: _emailController,
-                          icon: Icons.mail_outline,
-                          label: 'Email',
-                        ),
+                        _buildTextField(controller: _emailController, icon: Icons.mail_outline, label: 'Email'),
                         _buildTextField(
                           controller: _passwordController,
                           icon: Icons.lock_outline,
@@ -89,9 +79,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           obscureText: !_passwordVisibility,
                           suffixIcon: IconButton(
                             icon: Icon(
-                              _passwordVisibility
-                                  ? Icons.visibility
-                                  : Icons.visibility_off,
+                              _passwordVisibility ? Icons.visibility : Icons.visibility_off,
                               color: TColors.iconPrimary,
                             ),
                             onPressed: () {
@@ -122,14 +110,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: TColors.primary,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(24.0),
-                              ),
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24.0)),
                             ),
-                            child: Text(
-                              'Signup',
-                              style: textTheme.titleLarge?.copyWith(color: TColors.white),
-                            ),
+                            child: Text('Signup', style: textTheme.titleLarge?.copyWith(color: TColors.white)),
                           ),
                         ),
                         Padding(
@@ -147,7 +130,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         const SizedBox(height: 24),
                         const divider(),
                         const SizedBox(height: 10),
-                      
                       ],
                     ),
                   ),
@@ -172,16 +154,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
       child: Container(
         width: MediaQuery.of(context).size.width * 0.75,
         height: 50.0,
-        decoration: BoxDecoration(
-          color: TColors.lightGrey,
-          borderRadius: BorderRadius.circular(24.0),
-        ),
+        decoration: BoxDecoration(color: TColors.lightGrey, borderRadius: BorderRadius.circular(24.0)),
         child: Row(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 12.0),
-              child: Icon(icon, color: TColors.iconPrimary),
-            ),
+            Padding(padding: const EdgeInsets.only(left: 12.0), child: Icon(icon, color: TColors.iconPrimary)),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),

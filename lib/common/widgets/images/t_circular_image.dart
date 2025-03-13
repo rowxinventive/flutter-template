@@ -63,10 +63,7 @@ class TCircularImage extends StatelessWidget {
     }
 
     // Apply ClipRRect directly to the image widget
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(width >= height ? width : height),
-      child: imageWidget,
-    );
+    return ClipRRect(borderRadius: BorderRadius.circular(width >= height ? width : height), child: imageWidget);
   }
 
   // Function to build the network image widget

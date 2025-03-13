@@ -13,9 +13,7 @@ class TDeviceUtils {
   }
 
   static Future<void> setStatusBarColor(Color color) async {
-    SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(statusBarColor: color),
-    );
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(statusBarColor: color));
   }
 
   static bool isLandscapeOrientation(BuildContext context) {
@@ -109,7 +107,8 @@ class TDeviceUtils {
   }
 
   static bool isTabletScreen(BuildContext context) {
-    return MediaQuery.of(context).size.width >= TSizes.tabletScreenSize && MediaQuery.of(context).size.width < TSizes.desktopScreenSize;
+    return MediaQuery.of(context).size.width >= TSizes.tabletScreenSize &&
+        MediaQuery.of(context).size.width < TSizes.desktopScreenSize;
   }
 
   static bool isMobileScreen(BuildContext context) {
